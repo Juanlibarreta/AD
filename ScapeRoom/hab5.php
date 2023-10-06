@@ -21,15 +21,15 @@
     <div>
         <?php
         $combinacion1 = 3;
-        $combinacion2 = 4;
-        $combinacion3 = 2;
+        $combinacion2 = 1;
+        $combinacion3 = 6;
         if (empty($_POST)) {
             $vida = 3;
         } else {
             $vida = $_POST["vida"] - 1;
         }
         //var_export($_POST)
-            ?>
+        ?>
         <h4>
             El salón principal se abre ante ti, un espacio vasto y desolado lleno de torretas y robots. El aire está
             cargado con el olor de la electrónica chamuscada y el eco de explosiones distantes retumba en las paredes.
@@ -40,9 +40,6 @@
             salón. Entre las sombras, se yerguen torretas inmóviles, testimonios de una batalla que tuvo lugar aquí.
         </h4>
         <h4>
-            En la sala encuentras en el suelo reflejado una secuencia de lo mas extraña 0110 1010 1000
-        </h4>
-        <h4>
             A lo lejos, el candado emite un zumbido mecánico, y un contador digital parpadea en rojo, marcando la
             cantidad de veces que puedes intentar descifrar la combinacion. Es un recordatorio
             constante de que debes actuar con rapidez y decisión en este lugar sombrío y peligroso.
@@ -50,6 +47,10 @@
         <h4>
             Detras tuya oyes un rudio, la puerta por la que entraste se ha cerrado, dejandote no opcion que intentar
             encontrar las pistas.
+        </h4>
+        <h4>
+            Puedes observar al lado de la puerta un circuito con resistencias, por lo que ves el primer resistor es tres
+            veces más grande que el segundo, y el tercero tiene el doble de resistencia que el primero.
         </h4>
         <br>
         <form action="" method="post">
@@ -62,7 +63,7 @@
                 echo '<br>';
                 echo '<br>';
                 echo '<input type="submit" value="Descifrar">';
-            }else if($vida < 0 && ($_POST["comb1"] != $combinacion1 || $_POST["comb2"] != $combinacion2 || $_POST["comb3"] != $combinacion3)){
+            } else if ($vida < 0 && ($_POST["comb1"] != $combinacion1 || $_POST["comb2"] != $combinacion2 || $_POST["comb3"] != $combinacion3)) {
                 echo "<p>Notas una mano fria agarrandote la garganta, y ves en la pared tu sombra proyectada por decenas de luces apuntandote</p>";
                 echo "<p>Lo único que oyes antes de perder el conocimiento para siempre, es el ruido de todas ellas balanceandose contra ti, aplastando todo componento y órgano en tu cuerpo</p>";
                 echo "<p>FIN</p>";
