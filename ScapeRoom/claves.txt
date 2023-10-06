@@ -1,0 +1,32 @@
+C1
+767
+C2
+519
+C3
+531
+C5
+342
+
+Tema
+Cyberpunk
+
+H0
+Mesa quirurjica
+
+H1
+Arsenal
+
+H2
+Zona Medica
+
+H3
+Habitacion/Oficina
+
+H4
+Baño
+
+H5
+Salon Principal
+
+H6
+Salida
